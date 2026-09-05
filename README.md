@@ -21,3 +21,17 @@ Machine Learning system for detecting fraudulent credit card transactions using 
 
 ```bash
 pip install -r requirements.txt
+
+## 📊 Dataset
+
+### Download Credit Card Fraud Dataset
+
+1. Go to [Kaggle Dataset](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
+2. Click **Download** button
+3. Save `creditcard.csv` to the project root folder
+
+**OR** use Python to download:
+
+```python
+import kaggle
+kaggle.api.dataset_download_files('mlg-ulb/creditcardfraud', path='.', unzip=True)
